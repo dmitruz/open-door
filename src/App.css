@@ -12,4 +12,23 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #fff;
+
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
 }
