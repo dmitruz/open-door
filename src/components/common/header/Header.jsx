@@ -3,6 +3,7 @@ import "./header.css";
 import { Link } from 'react-router-dom';
 import { nav } from '../../data/data';
 
+
  const Header = () => {
     const [navList, setNavList] = useState(false);
   return (
@@ -10,7 +11,7 @@ import { nav } from '../../data/data';
     <header>
     <div className='container flex'>
         <div className='logo'>
-           <img src="../../images/logo.png" alt="logo" /> 
+            <img src="../../images/logo.png" alt="logo" />
         </div>
         <div className='nav'>
              <ul className={navList ? "small" : "flex"}>
