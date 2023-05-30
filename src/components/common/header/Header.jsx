@@ -1,15 +1,27 @@
 import React from 'react'
-import Logo from '../../images/logo.png';
+import { Link } from 'react-router-dom'
+import { nav } from '../../data/data'
 
  const Header = () => {
   return (
+    <>
     <header>
     <div className='container flex'>
         <div className='logo'>
-           <Logo /> 
+           <img src="../../images/logo.png" alt="logo" /> 
+        </div>
+        <div className='nav'>
+            <ul className='flex'>
+                {nav.map((list, index) => (
+                    <li key={index}>
+                        <Link to={list.path}>{list.text}</Link>
+                    </li>
+                ))}
+            </ul>
         </div>
     </div>
     </header>
+    </>
   )
 }
 
