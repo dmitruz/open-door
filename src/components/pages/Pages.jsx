@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../common/header/Header';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { BrowserRouter as Router, Outlet, Route } from "react-router-dom"
 import Home from '../home/Home';
 import About from '../about/About';
 import Services from '../services/Services';
@@ -16,7 +16,7 @@ import Footer from '../common/footer/Footer';
     <>
       <Router>
         <Header />
-        <Routes>
+        <Outlet>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/services' component={Services} />
@@ -24,7 +24,7 @@ import Footer from '../common/footer/Footer';
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/contact' component={Contact} />
           
-        </Routes>
+        </Outlet>
         <Footer />
       </Router>
     </>
