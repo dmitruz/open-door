@@ -17,12 +17,12 @@ import Footer from '../common/footer/Footer';
       <Router>
         <Header />
         <Outlet>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/services' component={Services} />
-          <Route exact path='/blog' component={Blog} />
-          <Route exact path='/pricing' component={Pricing} />
-          <Route exact path='/contact' component={Contact} />
+          <Route exact path='/' elementt={<Home />} />
+          <Route  path="about" element={<About />} />
+          <Route  path="servises" element={<Services />} />
+          <Route  path="blog" element={<Blog />} />
+          <Route  path="pricing" element={<Pricing />} />
+          <Route  path="contact" element={<Contact />} />
           
         </Outlet>
         <Footer />

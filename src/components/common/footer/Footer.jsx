@@ -34,10 +34,10 @@ const Footer = () => {
 
           {footer.map((val) => (
             <div className='box'>
-              <h3>{val.title}</h3>
+              <h3 key={val.id}>{val.title}</h3>
               <ul>
                 {val.text.map((items) => (
-                  <li> {items.list} </li>
+                  <li key={items.id}> {items.list} </li>
                 ))}
               </ul>
             </div>

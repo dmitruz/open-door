@@ -334,6 +334,7 @@ export const price = [
 ];
 export const footer = [
   {
+    id: 1,
     title: 'LAYOUTS',
     text: [
       { list: 'Home Page' },
@@ -345,6 +346,7 @@ export const footer = [
     ],
   },
   {
+    id: 2,
     title: 'ALL SECTIONS',
     text: [
       { list: 'Headers' },
@@ -356,6 +358,7 @@ export const footer = [
     ],
   },
   {
+    id: 3,
     title: 'COMPANY',
     text: [
       { list: 'About' },
